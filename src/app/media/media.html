@@ -1,0 +1,27 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="mb-3">
+                <label for="ac1" class="form-label">AC1</label>
+                <input id="ac1" [(ngModel)]="ac1" type="number" class="form-control" placeholder="Nota da AC1">
+
+                <label for="ac2" class="form-label">AC2</label>
+                <input id="ac2" [(ngModel)]="ac2" type="number" class="form-control" placeholder="Nota da AC2">
+
+                <label for="ag" class="form-label">AG</label>
+                <input id="ag" [(ngModel)]="ag" type="number" class="form-control" placeholder="Nota da AG">
+
+                <label for="af" class="form-label">AF</label>
+                <input id="af" [(ngModel)]="af" type="number" class="form-control" placeholder="Nota da AF">
+            </div>
+
+            <div class="text-center">
+                <button (click)="calcularMedia()">Calcular Média</button>
+            </div>
+
+            <p class="mt-3 text-center">Sua média é: {{ media }}</p>
+
+        </div>
+    </div>
+</div>

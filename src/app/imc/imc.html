@@ -1,0 +1,19 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="mb-3">
+
+                <label class="form-label">Peso em KG</label>
+                <input [(ngModel)]="peso" type="number" placeholder="Peso em kg">
+
+                <label class="form-label">Altura em Metros</label>
+                <input [(ngModel)]="altura" type="number" placeholder="Altura em metros">
+                
+                <button (click)="imc = peso / (altura * altura)">Calcular IMC</button>
+                
+                <p>Seu IMC é: {{imc}}</p>
+                
+                <p>
+                    {{ imc < 18.5 ? 'Abaixo do peso' : (imc < 24.9 ? 'Peso normal' : (imc < 29.9 ? 'Sobrepeso'
+                        : 'Obesidade' )) }} </p>
+            </div>

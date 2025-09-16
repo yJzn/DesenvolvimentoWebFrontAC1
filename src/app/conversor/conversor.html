@@ -1,0 +1,13 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="mb-3">
+                <div class="me-20">
+                <label for="ac1" class="form-label">Número em Celsius: </label>
+                </div>
+                <input [(ngModel)]="celsius" type="number" placeholder="Celsius">
+                <button (click)="converterDeCelsius()">Converter</button>
+                <p>Fahrenheit: {{resultado1}}</p>
+                <p>Kelvin: {{resultado2}}</p>
+            </div>
